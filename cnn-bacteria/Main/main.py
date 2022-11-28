@@ -204,7 +204,6 @@ def train():
 
     return val_mae
 
-
 def evaluate():
     """
     Evaluate the performance of the latest production model on new data
@@ -250,7 +249,6 @@ def evaluate():
     save_model(params=params, metrics=dict(mae=mae))
 
     return mae
-
 
 def pred(X_pred: pd.DataFrame = None) -> np.ndarray:
     """
